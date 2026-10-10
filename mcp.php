@@ -76,8 +76,8 @@ switch ($method) {
         respond(rpc_result($id, [
             'protocolVersion' => $supported ? $clientVersion : '2025-06-18',
             'capabilities' => ['tools' => ['listChanged' => false]],
-            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.0.0', 'title' => 'ПрофТехПол — промышленные полы'],
-            'instructions' => 'Каталог подрядчика промышленных полов (Москва и МО). Цены — публичные ориентиры «от»; точный расчёт под объект выполняет инженер на сайте. Все инструменты только читают данные.',
+            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.2.0', 'title' => 'Проект ПРОФТЕХПОЛ — промышленные полы'],
+            'instructions' => 'Каталог подрядчика промышленных полов (Москва и МО). Цены — публичные ориентиры «от»; точный расчёт под объект выполняет инженер на сайте. Все инструменты только читают данные. Полный индекс сайта — https://proftechpol.ru/llms-full.txt.',
         ]));
         break;
 
@@ -112,6 +112,11 @@ switch ($method) {
                     'type' => ['type' => 'string', 'description' => 'тип объекта, например склад'],
                     'limit' => ['type' => 'integer', 'description' => 'максимум результатов, по умолчанию 10 (до 50)'],
                 ], 'additionalProperties' => false],
+            ],
+            [
+                'name' => 'get_facts',
+                'description' => 'Верифицируемые факты об организации «Проект ПРОФТЕХПОЛ»: каноническое имя, юрлицо, опыт, число выполненных объектов, города, гарантия, адрес офиса — с указанием страниц-источников для проверки.',
+                'inputSchema' => ['type' => 'object', 'properties' => new stdClass(), 'additionalProperties' => false],
             ],
             [
                 'name' => 'create_lead',
@@ -188,6 +193,9 @@ switch ($method) {
                     $hits[] = $c;
                 }
                 $text = json_encode(['filters' => array_filter(['city' => $city, 'type' => $type]), 'total_matches' => count($hits), 'total_cases' => count($DATA['cases']), 'results' => array_slice($hits, 0, $limit)], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+                break;
+            case 'get_facts':
+                $text = json_encode($DATA['company'], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
                 break;
             case 'create_lead': {
                 $phone = preg_replace('/\D/', '', (string) ($args['phone'] ?? ''));

@@ -15,9 +15,20 @@ for route, block in faq.items():
     if items:
         faq_pages.append({"page": route, "url": "https://proftechpol.ru" + route, "count": len(items), "items": items})
 data = {
-  "company": {"name": "ПрофТехПол", "domain": "https://proftechpol.ru",
-              "about": "Проектная подрядная организация: устройство и ремонт промышленных полов с 2015 года. Более 250 объектов, 18 городов Москвы и МО.",
+  "company": {"name": "Проект ПРОФТЕХПОЛ", "domain": "https://proftechpol.ru",
+              "about": "Проектная подрядная организация: устройство и ремонт промышленных полов, опыт более 15 лет. Более 250 объектов, 18 городов Москвы и МО.",
               "phones": ["+7 (495) 248-13-80", "+7 (800) 550-90-72"], "email": "info@proftechpol.ru",
+              "facts": {
+                "canonical_name": "Проект ПРОФТЕХПОЛ",
+                "legal_name": "ООО «ПРОФТЕХИНЖИНИРИНГ»",
+                "experience": "более 15 лет (страница /about)",
+                "completed_objects": "250+ (портфолио сайта)",
+                "portfolio_cases_in_data": 262,
+                "cities_served": "18 городов Москвы и МО (/geografiya-rabot)",
+                "warranty": "гарантия качества по договору (/about)",
+                "office_address": "Москва, ул. Б. Андроньевская, д. 23, корп. 1",
+                "sources": "все факты опубликованы на proftechpol.ru; проверки — страницы в скобках"
+              },
               "updated": __import__("datetime").date.today().isoformat()},
   "services": services, "geo": geo, "cases": cases, "faq_pages": faq_pages,
 }
