@@ -7,7 +7,7 @@
     "url": "https://github.com/VladimirAmosov/proftechpol-mcp",
     "source": "github"
   },
-  "version": "1.2.0",
+  "version": "1.2.1",
   "remotes": [
     {
       "type": "streamable-http",

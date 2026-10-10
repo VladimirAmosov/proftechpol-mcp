@@ -24,6 +24,7 @@ PAGES = [
     ("Полы для холодильных камер", "/poly-dlya-holodilnyh-kamer"),
     ("Полы для пищевого производства", "/poly-dlya-pishchevogo-proizvodstva"),
     ("Полы для медицинских учреждений", "/encyclopedia/poly-dlya-medicinskih-uchrezhdeniy"),
+    ("Полиуретан-цементные полы", "/poliuretan-cementnye-poly"),
     ("Эпоксидные полы", "/epoksidnye-poly"),
     ("ММА полы", "/mma-poly"),
     ("География работ (18 городов)", "/geografiya-rabot"),

@@ -76,7 +76,7 @@ switch ($method) {
         respond(rpc_result($id, [
             'protocolVersion' => $supported ? $clientVersion : '2025-06-18',
             'capabilities' => ['tools' => ['listChanged' => false]],
-            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.2.0', 'title' => 'Проект ПРОФТЕХПОЛ — промышленные полы'],
+            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.2.1', 'title' => 'Проект ПРОФТЕХПОЛ — промышленные полы'],
             'instructions' => 'Каталог подрядчика промышленных полов (Москва и МО). Цены — публичные ориентиры «от»; точный расчёт под объект выполняет инженер на сайте. Все инструменты только читают данные. Полный индекс сайта — https://proftechpol.ru/llms-full.txt.',
         ]));
         break;
