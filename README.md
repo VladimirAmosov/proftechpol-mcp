@@ -1,4 +1,4 @@
-# proftechpol-mcp — MCP-сервер сайта ПрофТехПол (промышленные полы, Москва и МО)
+# proftechpol-mcp — MCP-сервер сайта «Проект ПРОФТЕХПОЛ» (промышленные полы, Москва и МО)
 
 **Endpoint:** `https://proftechpol.ru/mcp` — MCP Streamable HTTP (stateless, без SSE; CORS открыт; GET → 405).
 
@@ -25,4 +25,4 @@ Read-only каталог подрядчика промышленных поло�
 
 MCP Inspector: `npx @modelcontextprotocol/inspector --cli https://proftechpol.ru/mcp --method tools/list`
 
-© ПрофТехПол, proftechpol.ru · info@proftechpol.ru
+© Проект ПРОФТЕХПОЛ (ООО «ПРОФТЕХИНЖИНИРИНГ»), proftechpol.ru · info@proftechpol.ru
