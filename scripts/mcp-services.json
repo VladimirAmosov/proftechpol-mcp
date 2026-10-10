@@ -1,0 +1,132 @@
+[
+ {
+  "slug": "proizvodstvenye-poly",
+  "name": "Производственные полы",
+  "url": "https://proftechpol.ru/proizvodstvenye-poly",
+  "summary": "Промышленные полы для цехов, складов, пищевых производств под ключ: конструкцию под нагрузку считает инженер.",
+  "price_from_rub_m2": 5400,
+  "note": "цена на готовом основании"
+ },
+ {
+  "slug": "topping-poly",
+  "name": "Топпинговые полы",
+  "url": "https://proftechpol.ru/topping-poly",
+  "summary": "Бетонные полы с топпингом (корунд, металл, кварц) под тяжёлую технику и стеллажи.",
+  "price_from_rub_m2": 5400,
+  "note": "цена на готовом основании"
+ },
+ {
+  "slug": "remont",
+  "name": "Ремонт промышленных полов",
+  "url": "https://proftechpol.ru/remont",
+  "summary": "Ремонт бетонных и промышленных полов: трещины, сколы, пыление, разрушение; ремонт под нагрузкой."
+ },
+ {
+  "slug": "betonnaya-podgotovka-pola",
+  "name": "Бетонная подготовка и стяжка",
+  "url": "https://proftechpol.ru/betonnaya-podgotovka-pola",
+  "summary": "Бетонная подготовка пола и стяжка под покрытия: основание, толщины, армирование."
+ },
+ {
+  "slug": "obespylivanie-betona",
+  "name": "Обеспыливание бетонного пола",
+  "url": "https://proftechpol.ru/obespylivanie-betona",
+  "summary": "Обеспыливание бетона и старого пола: пропитка, шлифовка с упрочнением, покрытие под нагрузку."
+ },
+ {
+  "slug": "shlifovka-betonnogo-pola",
+  "name": "Шлифовка и фрезеровка",
+  "url": "https://proftechpol.ru/shlifovka-betonnogo-pola",
+  "summary": "Шлифовка бетонного пола и фрезеровка: снятие старого покрытия, выравнивание, подготовка основания."
+ },
+ {
+  "slug": "usilenie-pola",
+  "name": "Усиление пола под нагрузку",
+  "url": "https://proftechpol.ru/usilenie-pola",
+  "summary": "Пересчёт и усиление конструкции пола под фактическую нагрузку (например 7→5 т/м² и др.).",
+  "price_from_rub_m2": 5400,
+  "note": "цена на готовом основании"
+ },
+ {
+  "slug": "epoksidnye-poly",
+  "name": "Эпоксидные полы",
+  "url": "https://proftechpol.ru/epoksidnye-poly",
+  "summary": "Эпоксидные полы: химстойкость, бесшовность, окраска по зонам."
+ },
+ {
+  "slug": "mma-poly",
+  "name": "ММА полы (метилметакрилатные)",
+  "url": "https://proftechpol.ru/mma-poly",
+  "summary": "ММА-полы: быстрая укладка (часы), холодные склады, ремонт за выходные."
+ },
+ {
+  "slug": "polimernye-poly",
+  "name": "Полимерные полы",
+  "url": "https://proftechpol.ru/polimernye-poly",
+  "summary": "Полимерные покрытия: эпоксид, полиуретан — выбор под задачу и нагрузку."
+ },
+ {
+  "slug": "promyshlennye-nalivnye-poly",
+  "name": "Промышленные наливные полы",
+  "url": "https://proftechpol.ru/promyshlennye-nalivnye-poly",
+  "summary": "Наливные промышленные полы: самонивелирующиеся системы под производство."
+ },
+ {
+  "slug": "antistaticheskie-poly",
+  "name": "Антистатические полы",
+  "url": "https://proftechpol.ru/antistaticheskie-poly",
+  "summary": "Антистатические покрытия для электронки, серверных, лабораторий."
+ },
+ {
+  "slug": "poly-dlya-sklada",
+  "name": "Полы для склада",
+  "url": "https://proftechpol.ru/poly-dlya-sklada",
+  "summary": "Складские полы под погрузчики и стеллажи: топпинг, полимер, полированный бетон."
+ },
+ {
+  "slug": "poly-dlya-angarov",
+  "name": "Полы для ангаров",
+  "url": "https://proftechpol.ru/poly-dlya-angarov",
+  "summary": "Полы для ангаров и складских помещений, отапливаемых и холодных: топпинг под технику."
+ },
+ {
+  "slug": "poly-dlya-parkingov",
+  "name": "Полы для паркингов",
+  "url": "https://proftechpol.ru/poly-dlya-parkingov",
+  "summary": "Полы паркингов, стойкие к реагентам и шипам.",
+  "price_from_rub_m2": 2700
+ },
+ {
+  "slug": "poly-dlya-avtoservisov",
+  "name": "Полы для автосервисов",
+  "url": "https://proftechpol.ru/poly-dlya-avtoservisov",
+  "summary": "Полы автосервисов и моек: маслобензостойкость.",
+  "price_from_rub_m2": 1200
+ },
+ {
+  "slug": "poly-dlya-holodilnyh-kamer",
+  "name": "Полы для холодильных камер",
+  "url": "https://proftechpol.ru/poly-dlya-holodilnyh-kamer",
+  "summary": "Полы холодильников и морозильных камер: ММА, устойчивость к низким температурам."
+ },
+ {
+  "slug": "poly-dlya-pishchevogo-proizvodstva",
+  "name": "Полы для пищевого производства",
+  "url": "https://proftechpol.ru/poly-dlya-pishchevogo-proizvodstva",
+  "summary": "Пищевые производства: гигиеничные покрытия, соответствие требованиям.",
+  "price_from_rub_m2": 5400,
+  "note": "цена на готовом основании"
+ },
+ {
+  "slug": "poly-dlya-torgovyh-tsentrov",
+  "name": "Полы для ТЦ",
+  "url": "https://proftechpol.ru/poly-dlya-torgovyh-tsentrov",
+  "summary": "Полы торговых центров по зонам: вход, зал, фудкорт, склад."
+ },
+ {
+  "slug": "calculator-promyshlennogo-pola",
+  "name": "Калькулятор промышленного пола",
+  "url": "https://proftechpol.ru/calculator-promyshlennogo-pola",
+  "summary": "Онлайн-расчёт по нагрузке, основанию и площади."
+ }
+]
