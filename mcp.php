@@ -75,8 +75,8 @@ switch ($method) {
         mcp_log('initialize | ' . $clientVersion);
         respond(rpc_result($id, [
             'protocolVersion' => $supported ? $clientVersion : '2025-06-18',
-            'capabilities' => ['tools' => ['listChanged' => false]],
-            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.2.1', 'title' => 'Проект ПРОФТЕХПОЛ — промышленные полы'],
+            'capabilities' => ['tools' => ['listChanged' => false], 'resources' => ['subscribe' => false, 'listChanged' => false]],
+            'serverInfo' => ['name' => 'proftechpol-mcp', 'version' => '1.3.0', 'title' => 'Проект ПРОФТЕХПОЛ — промышленные полы'],
             'instructions' => 'Каталог подрядчика промышленных полов (Москва и МО). Цены — публичные ориентиры «от»; точный расчёт под объект выполняет инженер на сайте. Все инструменты только читают данные. Полный индекс сайта — https://proftechpol.ru/llms-full.txt.',
         ]));
         break;
@@ -84,6 +84,31 @@ switch ($method) {
     case 'ping':
         mcp_log('ping');
         respond(rpc_result($id, []));
+        break;
+
+    case 'resources/list':
+        mcp_log('resources/list');
+        respond(rpc_result($id, ['resources' => [
+            ['uri' => 'proftechpol://llms', 'name' => 'Индекс сайта для ИИ (llms.txt)', 'mimeType' => 'text/markdown', 'description' => 'Карта ключевых страниц: услуги, цены-ориентиры, гео, кейсы, FAQ'],
+            ['uri' => 'proftechpol://facts', 'name' => 'Факты организации «Проект ПРОФТЕХПОЛ»', 'mimeType' => 'application/json', 'description' => 'Верифицируемые факты: юрлицо, опыт, объекты, города, гарантия'],
+        ]]));
+        break;
+
+    case 'resources/read':
+        $uri = (string) ($body['params']['uri'] ?? '');
+        mcp_log('resources/read | ' . $uri);
+        if ($uri === 'proftechpol://llms') {
+            $txt = @file_get_contents(__DIR__ . '/llms.txt');
+            respond(rpc_result($id, ['contents' => [['uri' => $uri, 'mimeType' => 'text/markdown', 'text' => $txt !== false ? $txt : 'llms.txt недоступен']]]));
+        } elseif ($uri === 'proftechpol://facts') {
+            respond(rpc_result($id, ['contents' => [['uri' => $uri, 'mimeType' => 'application/json', 'text' => json_encode($DATA['company'], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)]]]));
+        }
+        respond(rpc_error($id, -32002, 'Unknown resource: ' . $uri));
+        break;
+
+    case 'prompts/list':
+        mcp_log('prompts/list');
+        respond(rpc_result($id, ['prompts' => []]));
         break;
 
     case 'tools/list':
